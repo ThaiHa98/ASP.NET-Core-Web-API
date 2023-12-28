@@ -32,7 +32,7 @@ namespace ASP.NET_Core_Web_API.Controllers
         }
 
         [HttpGet("{staffId}")]
-        [ProducesResponseType(200, Type = typeof(Staff))]
+        [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         public IActionResult GetStaff(int staffId)
         {
