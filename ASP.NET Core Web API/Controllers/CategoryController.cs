@@ -52,6 +52,19 @@ namespace ASP.NET_Core_Web_API.Controllers
                 return BadRequest(ModelState);
             return Ok(staffByCate);
         }
+        //[HttpGet()]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<Category>))]
+        //[ProducesResponseType(400)]
+        //public IActionResult GetString()
+        //{
+        //    return 
+        //}
+        
+        [HttpGet("test")]
+        public IActionResult GetAll()
+        {
+            return Ok("loi he thong");
+        }
 
     }
 }
